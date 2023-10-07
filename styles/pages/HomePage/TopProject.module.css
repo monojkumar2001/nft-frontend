@@ -1,0 +1,223 @@
+.projects {
+  position: relative;
+  z-index: 1;
+}
+.blue_filter{
+  width: 345.517px;
+  height: 345.517px;
+  border-radius: 345.517px;
+  background: #5754EA;
+  filter: blur(232px);
+  position: absolute;
+  left: -200px;
+  top: -100px;
+}
+.top_project_img_1 {
+  position: absolute;
+  right:0px;
+  top: 100px;
+  z-index: 0;
+}
+.top_project_img_2 {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  bottom: 50px;
+}
+
+.section_title {
+  text-align: center;
+  width: 55%;
+  margin: auto;
+}
+h2.sec_title {
+  font-size: 40px;
+  color: var(--second-color);
+  position: relative;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+h2.sec_title:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 40%;
+  background: var(--main-color);
+  bottom: 0;
+}
+.sec_title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.project_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  margin-top: 24px;
+  z-index: 1;
+}
+
+.sec_title h2 {
+  font-size: clamp(25px, 2vw, 44px);
+  line-height: 50px;
+}
+
+.btn_purple_2 {
+  background: #6c54ea;
+  border-radius: 10px;
+  padding: 14px 26px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 3px solid #6c54ea;
+}
+
+.btn_purple_2:hover {
+  color: #6c54ea;
+  background: #ffffff;
+}
+.table_responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.project_table {
+  background-image: url(../../../public/assets/images/top-project/top-project-bg.svg);
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 50px 40px;
+  width: 100%;
+}
+.table_head_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #f6f4ff 0%, #f3f0ff 100%);
+}
+.table_body_item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project_table td,
+.project_table th {
+  padding: 30px 7px;
+}
+
+.project_table th {
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  color: #130f49;
+  white-space: nowrap;
+}
+
+.project_table td {
+  font-weight: 600;
+  font-size: 18px;
+  white-space: pre;
+  color: #130f49;
+}
+
+.project_table tr td:nth-child(3) {
+  color: #12d790;
+}
+.project_table tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.project_table tbody td {
+  padding: 10px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 7px;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #f6f4ff 0%, #f3f0ff 100%);
+  text-align: center;
+  font-family: sans-serif;
+}
+p.sm_title {
+  text-transform: uppercase;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4355b4 0%, #fa00ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.top_project_bottom{
+  height: 70px;
+  width: 100%;
+  background: var(--main-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+  margin: 40px 0;
+  border: 0.5px solid #fff;
+}
+.top_project_bottom h4{
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 700;
+  color: var(--white-color);
+}
+@media screen and (max-width: 992px) {
+  .section_title {
+    width: 95%;
+  }
+  .project_table {
+    padding: 0 10px;
+  }
+  .projects {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .project_table td {
+    font-size: 14px;
+  }
+  .project_table th {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .project_table {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  h2.sec_title {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 15px;
+  }
+  .btn_purple_2 {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .project_content {
+    align-items: center;
+  }
+}

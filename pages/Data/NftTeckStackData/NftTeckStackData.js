@@ -1,0 +1,229 @@
+
+export const BlockChainPlatformData=[
+    {
+        id:1,
+        img:'/assets/img/icon/blockchain/1.png',
+        title:"Ethereum"
+    },
+    {
+        id:2,
+        img:'/assets/img/icon/blockchain/2.png',
+        title:"Hyperledger"
+    },
+    {
+        id:3,
+        img:'/assets/img/icon/blockchain/3.png',
+        title:"Binance"
+    },
+    {
+        id:4,
+        img:'/assets/img/icon/blockchain/4.png',
+        title:"Tyon"
+    },
+    {
+        id:5,
+        img:'/assets/img/icon/blockchain/5.png',
+        title:"Solana"
+    },
+    {
+        id:6,
+        img:'/assets/img/icon/blockchain/6.png',
+        title:"Polygon"
+    },
+    {
+        id:7,
+        img:'/assets/img/icon/blockchain/7.png',
+        title:"Cardano"
+    },
+    {
+        id:8,
+        img:'/assets/img/icon/blockchain/8.png',
+        title:"Polkadot"
+    },
+    {
+        id:9,
+        img:'/assets/img/icon/blockchain/9.png',
+        title:"Litecoin"
+    },
+    {
+        id:10,
+        img:'/assets/img/icon/blockchain/10.png',
+        title:"Avalanche"
+    },
+    {
+        id:11,
+        img:'/assets/img/icon/blockchain/11.png',
+        title:"NEO"
+    },
+    {
+        id:12,
+        img:'/assets/img/icon/blockchain/12.png',
+        title:"Harmony"
+    },
+    {
+        id:13,
+        img:'/assets/img/icon/blockchain/13.png',
+        title:"Fantom"
+    },
+    {
+        id:14,
+        img:'/assets/img/icon/blockchain/14.png',
+        title:"Moonbeam"
+    },
+    {
+        id:15,
+        img:'/assets/img/icon/blockchain/15.png',
+        title:"Aurora"
+    },
+    {
+        id:16,
+        img:'/assets/img/icon/blockchain/16.png',
+        title:"Cronos"
+    },
+]
+
+export const StoragePlatformData=[
+    {
+        id:1,
+        img:'/assets/img/icon/ipfs.png',
+        title:"IPFS"
+    },
+    {
+        id:2,
+        img:'/assets/img/icon/file-coin.png',
+        title:"File Coin"
+    },
+    {
+        id:3,
+        img:'/assets/img/icon/couchbd.png',
+        title:"CouchDB"
+    },
+]
+
+export const NFTStandardsData=[
+    {
+        id:1,
+        img:`/assets/img/icon/etherium.png`,
+        title:"ERC-721A"
+    },
+    {
+        id:2,
+        img:`/assets/img/icon/etherium.png`,
+        title:"ERC-1155"
+    },
+    {
+        id:3,
+        img:`/assets/img/icon/tezos.png`,
+        title:"Tezos"
+    },
+    {
+        id:4,
+        img:`/assets/img/icon/dgoods.png`,
+        title:"Dgoods"
+    },
+    {
+        id:5,
+        img:`/assets/img/icon/trc.png`,
+        title:"Trc-721"
+    },
+    {
+        id:6,
+        img:`/assets/img/icon/bep.png`,
+        title:"Bep-20"
+    },
+    {
+        id:7,
+        img:`/assets/img/icon/rust.png`,
+        title:"Rust Programing"
+    }
+]
+
+export const FrontEndFrameworksData=[
+    {
+        id:1,
+        img:`/assets/img/icon/vuejs.png`,
+        title:"Vue Js"
+    },
+    {
+        id:2,
+        img:`/assets/img/icon/angular.png`,
+        title:"Angular"
+    },
+    {
+        id:3,
+        img:`/assets/img/icon/react.png`,
+        title:"React"
+    },
+    {
+        id:4,
+        img:`/assets/img/icon/cafca.png`,
+        title:"akfka"
+    },
+    {
+        id:5,
+        img:`/assets/img/icon/couchdb.png`,
+        title:"CouchDB"
+    },
+    {
+        id:5,
+        img:`/assets/img/icon/couchdb-2.png`,
+        title:"CouchDB"
+    }
+]
+
+export const ProgrammingLanguagesData=[
+    {
+        id:1,
+        img:`/assets/img/icon/solidity.png`,
+        title:"Solidity"
+    },
+    {
+        id:2,
+        img:`/assets/img/icon/angular1.png`,
+        title:"Angular"
+    },
+    {
+        id:3,
+        img:`/assets/img/icon/c++.png`,
+        title:"C++"
+    },
+    {
+        id:4,
+        img:`/assets/img/icon/c.png`,
+        title:"c"
+    },
+    {
+        id:5,
+        img:`/assets/img/icon/couchdb.png`,
+        title:"CouchDB"
+    },
+    {
+        id:6,
+        img:`/assets/img/icon/php.png`,
+        title:"PHP"
+    }
+]
+
+export const CloudPlatformsData=[
+    {
+        id:1,
+        img:`/assets/img/icon/aws.png`,
+        title:"aws"
+    },
+    {
+        id:2,
+        img:`/assets/img/icon/ibm.png`,
+        title:"IBM BLUEMIX"
+    },
+    {
+        id:3,
+        img:`/assets/img/icon/rass.png`,
+        title:"Eth rass"
+    },
+    {
+        id:4,
+        img:`/assets/img/icon/kaleido.png`,
+        title:"Kaleido Insights"
+    }
+
+]

@@ -1,0 +1,12 @@
+
+
+.work_place_header{
+    display: flex;
+}
+/* .work_place_header{ */
+.work_place_content_item{
+    display: none;
+}
+.work_place_content_item.active{
+    display: block;
+}

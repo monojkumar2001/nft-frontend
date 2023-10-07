@@ -1,0 +1,129 @@
+.section_wrap {
+  position: relative;
+  z-index: 1;
+}
+.yellow_filter{
+  width: 345.517px;
+  height: 345.517px;
+  border-radius: 345.517px;
+  background: #CCEA54;
+  filter: blur(232px);
+  position: absolute;
+  right: -200px;
+  top: 0px; 
+}
+.client_review {
+  margin-top: 50px;
+  padding: 30px 50px;
+}
+.client_review_slider {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: #952ef6 8px 8px 0px 1px, #5d6aef 0px 0px 0px 3px;
+  border-radius:20px;
+  /* border: 3px solid #952ef6; */
+
+  background-color: var(--white-color);
+  text-align: center;
+  z-index: 111;
+  height: 330px;
+  padding: 60px 20px 20px 40px;
+  position: relative;
+}
+.review_icon {
+  position: absolute;
+  background: linear-gradient(180deg, #6d50ea 0%, #7520e4 100%);
+  width: 70px;
+  height: 70px;
+  top:-50px;
+  padding: 15px;
+  border-radius: 100%;
+  color: var(--white-color);
+  z-index:11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review_icon img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review_title{
+  background: linear-gradient(108deg, #36BEFF 0%, #733FF1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 20px;
+font-weight: 700;
+}
+.review_dis{
+  font-weight: 400;
+  font-size: 20px;
+}
+.review_profile{
+  display: flex;
+  align-items:center;
+  text-align: start;
+  gap: 20px;
+  justify-content: center;
+
+}
+.review_user_name h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black-color);
+}
+.slider_navAll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+
+  h2.content_title {
+    font-size: 30px;
+  }
+  .chainup_title {
+    margin-bottom: 35px;
+    text-align: center;
+    display: inherit;
+    text-transform: capitalize;
+  }
+  .chainup_title h2:before {
+    content: "";
+    width: 26%;
+    height: 4px;
+    background: var(--main-color);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+  .chainup_title h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .client_review {
+    margin-top: 15px;
+  }
+
+  h2.content_title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}

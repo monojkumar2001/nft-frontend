@@ -1,0 +1,72 @@
+#marketing{
+  position: relative;
+  padding-top: 150px;
+  background-image: url(../../../public/assets/images/meta-service/hero-bg-img.svg);
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+#marketing .hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  #marketing .hero_content h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    color: #061237;
+  }
+  #marketing .hero_content h1 span {
+    background: linear-gradient(180deg, #6C54EA 0%, #A237F6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #marketing .hero_btns {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    justify-content: center;
+  }
+
+  #marketing .btn_hero_1 {
+    padding: 16px 46px;
+    background: #6e58eb;
+    box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+    border-radius: 37px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    transition: 0.3s;
+    border: 2px solid var(--main-color);
+  }
+  #marketing .btn_hero_1 a {
+    color: #ffffff;
+  }
+  
+  #marketing .btn_hero_1:hover {
+    background: #4c38bd;
+    border: 2px solid #4c38bd;
+  }
+
+  @media screen and (max-width: 992px) {
+    #marketing .hero_content h1 {
+        font-size: 50px;
+      }
+    
+}
+  @media screen and (max-width: 768px) {
+    #marketing .hero_content h1 {
+        font-size: 40px;
+      }
+    
+}

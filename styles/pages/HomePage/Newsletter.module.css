@@ -1,0 +1,137 @@
+
+/*------------------------------------------------*/
+
+.newsletters {
+    width: 100%;
+    background: linear-gradient(90deg, #4355b4 0%, #fb01ff 100%);
+    position: relative;
+  }
+  
+  .flex_col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .subscriber_name{
+    max-width: 391px;
+}
+  .newsletter_title{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+    color: #ffffff;
+  }
+  .banner_img {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    bottom: -10px;
+  }
+  .newsletter_pra {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  
+  .newsletter_content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 64px 40px;
+    margin-left: 14%;
+    z-index: 90;
+    position: relative;
+  }
+  
+  .subscribe_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .subscribe_inputs input {
+    background: #ffffff;
+    border-radius: 187px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #14161b;
+    padding: 26px 24px;
+    outline: none;
+    border: none;
+  }
+  
+  .subscribe_inputs input::placeholder {
+    color: #616161;
+  }
+  
+  .input_withbtn {
+    position: relative;
+    max-width: 590px;
+  }
+  
+  
+  
+  .input_withbtn button {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+  }
+  
+  .input_withbtn input {
+    width: 100%;
+  }
+  
+  .subscirbe_btn {
+    padding: 18px 44px;
+    background: #6c54ea;
+    border-radius: 145px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+    transition: 0.3s;
+    color: #ffffff;
+    outline: none;
+    border: none;
+  }
+  
+  .subscirbe_btn:hover {
+    background: #513cb5;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .newsletter_content {
+        margin-left: 0%;
+    }
+    .banner_img {
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .newsletter_content {
+        padding: 63px 10px;
+    }
+    .subscirbe_btn {
+        padding: 18px 25px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .subscribe_inputs input {
+        background: #ffffff;
+        border-radius: 187px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #14161b;
+        padding: 22px 24px;
+        outline: none;
+        border: none;
+    }
+    
+  .subscirbe_btn {
+    padding: 13px 15px;
+}
+  }

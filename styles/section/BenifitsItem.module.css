@@ -1,0 +1,228 @@
+.benefit_section {
+    margin-top: 124px;
+  }
+
+  #inner_area .spider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+  }
+  
+  #inner_area .spider_center {
+    margin-top: 40px;
+    position: absolute;
+    animation: zoomIn 0.85s ease-in-out;
+  }
+  
+  #inner_area .benefits {
+    top: 0px;
+    display: grid;
+    justify-items: center;
+    max-width: 1197px;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  
+#inner_area .benefits_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #inner_area .benefits_container:nth-child(1) {
+    max-width: 826px;
+  }
+  
+  #inner_area .benefits_container:nth-child(2) {
+    margin-top: 62px;
+    max-width: 984px;
+  }
+  
+  #inner_area .benefits_container:nth-child(3) {
+    max-width: 1076px;
+    margin-top: 52px;
+  }
+  
+  #inner_area .benefits_container:nth-child(4) {
+    max-width: 984px;
+    margin-top: 63px;
+  }
+  
+  #inner_area .benefits_container:nth-child(5) {
+    margin-top: 50px;
+    max-width: 826px;
+  }
+
+  #inner_area .benefit_box {
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 14px 49px rgba(108, 84, 234, 0.06);
+    border-radius: 20px;
+    width: 294px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+#inner_area .benefit_box p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #323232;
+    animation: appear-txt 0.95s;
+  }
+
+  
+
+#inner_area .benefits_container .benefit_box:nth-child(1) {
+    padding-left: 79px;
+  }
+  
+  #inner_area .benefits_container .benefit_box:nth-child(2) {
+    padding-left: 40px;
+  }
+  
+  #inner_area .benefits_container .benefit_box:nth-child(1) .benifit_img {
+    left: -59px;
+    animation: slide-profit 0.85s ease-in-out;
+  }
+  
+  #inner_area .benefits_container .benefit_box:nth-child(2) .benifit_img {
+    right: -59px;
+    animation: slide-profit2 0.85s ease-in-out;
+  }
+  
+  @keyframes slide-profit {
+    0% {
+        left: 300px;
+    }
+    100% {
+        left: -59px;
+    }
+  }
+  
+  @keyframes slide-profit2 {
+    0% {
+        right: 300px;
+    }
+    100% {
+        right: -59px;
+    }
+  }
+  
+  @keyframes appear-txt {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  #inner_area .benefits_container:nth-child(1) .benefit_box {
+    width: 339px;
+  }
+  
+  #inner_area .benefits_container:nth-child(5) .benefit_box {
+    width: 339px;
+  }
+  
+  #inner_area .benefit_box .benifit_img {
+    position: absolute;
+    transition: 0.7s;
+  }
+  
+  #inner_area .benefit_box .benifit_img:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1280px) {
+    #inner_area .spider {
+        zoom: 0.85;
+    }
+  }
+  
+  @media only screen and (max-width: 1040px) {
+    #inner_area .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    #inner_area .double-service {
+        max-width: 1232px;
+    }
+    #inner_area .spider {
+        zoom: 0.65;
+    }
+
+    #inner_area .benefits-decor img:nth-child(1) {
+        top: 100px;
+    }
+    #inner_area .benefits-decor img:nth-child(2) {
+        top: 350px;
+    }
+    #inner_area .benefits-decor img:nth-child(3) {
+        top: 30px;
+    }
+    .benefit_section {
+        margin-top: 80px;
+      }
+  }
+  
+  @media only screen and (max-width: 860px) {
+    #inner_area .spider {
+        zoom: 0.55;
+    }
+  }
+  
+@media only screen and (max-width: 680px) {
+    #inner_area .spider {
+        zoom: 0.5;
+    }
+    .benefit_section {
+        margin-top: 60px;
+      }
+
+    #inner_area .benefits_container:nth-child(1) {
+        max-width: 802px;
+    }
+    #inner_area .benefits-container:nth-child(2) {
+        margin-top: 62px;
+        max-width: 960px;
+    }
+    #inner_area .benefits_container:nth-child(3) {
+        max-width: 1052px;
+        margin-top: 52px;
+    }
+    #inner_area .benefits_container:nth-child(4) {
+        max-width: 960px;
+        margin-top: 63px;
+    }
+    #inner_area .benefits_container:nth-child(5) {
+        margin-top: 50px;
+        max-width: 802px;
+    }
+    #inner_area h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    #inner_area .spider {
+        zoom: 0.4;
+    }
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    #inner_area .spider {
+        zoom: 0.3;
+    }
+    #inner_area h2 {
+        font-size: 28px;
+    }
+  }
+  

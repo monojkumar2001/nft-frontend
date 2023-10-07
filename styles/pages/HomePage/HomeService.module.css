@@ -1,0 +1,119 @@
+
+.service{
+  position: relative;
+}
+.green_filter{
+    width: 345.517px;
+  height: 345.517px;
+  border-radius: 345.517px;
+  background: #3F0;
+  filter: blur(232px);
+  position: absolute;
+  left: -200px;
+  top: 0px;
+  
+}
+.service_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 30px;
+    margin-top: 70px;
+  }
+  
+  .service-grid.active {
+    display: grid;
+  }
+  .service_car {
+    position: relative;
+    border: 1px solid #751EE4;
+    box-shadow: 0px 27.11px 49.06px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 30px 20px 40px 20px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    /* box-shadow: #952ef6 8px 8px 0px 1px, #5d6aef 0px 0px 0px 2px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .service_car:hover {
+    transform: translateY(-10px);
+    border: 1px solid #751EE4;
+    /* box-shadow: #952ef6 8px 8px 0px 1px, #5d6aef 0px 0px 0px 2px; */
+    /* box-shadow: #952ef6 15px 15px 0px -2px, #5d6aef 0px 0px 0px 2px; */
+    background: var(--main-color);
+  }
+  .service_car:hover .learn_more_btns  {
+    color:#751EE4;
+    background: var(--white-color);
+    /* background: var(--main-color); */
+  }
+  .service_car:hover .service_icon {
+    background: var(--white-color);
+  } 
+  .service_car:hover .service_content,
+  .service_car:hover .service_content h3 {
+    color: var(--white-color);
+  }
+
+  .service_icon {
+    display: flex;
+    background: rgba(108, 84, 234, 0.1215686275);
+    padding: 10px;
+    border-radius: 50%;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+  }
+
+
+
+  .service_icon img{
+width: 100%;
+  }
+  
+  .service_content {
+    margin-top: 20px;
+  }
+
+  .service_content h3 {
+  font-size: 26px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: var(--second-color);
+}
+.service_learn_more_btn {
+    position: absolute;
+    bottom: -20px;
+  }
+  
+  .learn_more_btns {
+    background: var(--main-color);
+    border-radius: 37px;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white-color);
+  }
+
+  @media screen and (max-width: 992px) {
+    .service_grid {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
+    }
+    .service_car {
+        padding: 20px 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .service_grid {
+        grid-template-columns: 1fr;
+    }
+    .service_car {
+        padding: 30px 10px;
+    }
+  }

@@ -1,0 +1,273 @@
+
+
+.form-group-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.input-box {
+  background: var(--white-color);
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 14px 49px rgba(108, 84, 234, 0.06);
+  border-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+
+}
+label {
+  color: var(--main-color);
+  font-weight: 600;
+  margin: 15px 0;
+  display: block;
+}
+/*------------------  related-news --------------------*/
+.related-news {
+  padding: 46px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 2px solid rgba(99, 69, 237, 0.1);
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+.news {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.news-container {
+  display: flex;
+  gap: 80px;
+}
+
+.news-txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+img.recent-post-img {
+  width: 130px;
+}
+
+/*--------------------- right side ---------------------------*/
+.blog-right-side .related-news .news-container {
+  flex-direction: column;
+  gap: 32px;
+}
+/*----------------------- font -----------------------*/
+.raleway-grey-14 {
+  font-weight: 400;
+  line-height: 200%;
+  color: #616161;
+}
+.urbanist-dark-22 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 150%;
+  color: #31394c;
+  margin-bottom: 20px;
+  width: 66%;
+}
+.request-form {
+  background: #fff;
+  padding: 35px;
+  box-shadow: -1px 19px 49px rgba(102, 87, 179, 0.11);
+  border-radius: 10px;
+}
+.btn-hero-1 {
+  padding: 16px 46px;
+  background: #6e58eb;
+  box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+  border-radius: 37px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid var(--main-color);
+}
+.btn-hero-1:hover {
+  background: #4c38bd;
+  border: 2px solid #4c38bd;
+  color: #fff;
+}
+.hiring-procedure {
+  padding: 85px 0;
+}
+.form-group-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+.form-group-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+.file-input {
+  margin: 30px 0;
+  padding:10px 10px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 0px 14px 49px rgba(108, 84, 234, 0.06);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.career-area {
+  margin-bottom: 100px;
+}
+// ===================job form ====================
+input.form-control.job-input {
+  border: 1px solid #7057ed6e;
+  padding: 14px;
+  border-radius: 5px;
+}
+.loading-post-data {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background: #06123763;
+  backdrop-filter: blur(4px);
+  z-index: 99;
+  display: none;
+}
+.active.loading-post-data {
+  display: flex;
+}
+.input-group-footer {
+  display: flex;
+  align-items: center;
+}
+button#button-addon2 {
+  background: #281b6b;
+  font-size: 16px;
+  color: #fff;
+  padding: 12px 13px;
+}
+.form-control-newsletter {
+  width: 100%;
+  background: #fff;
+  font-size: 16px;
+  padding: 12px 13px;
+}
+.news-letter-from {
+  color: #fff;
+}
+.react-tel-input .form-control {
+  width: 100% !important;
+  border: 1px solid #f2f2f2 !important;
+  box-shadow: 0px 14px 49px rgb(108 84 234 / 6%);
+  height: 60px !important;
+  border-radius: 7px !important;
+}
+.react-tel-input .flag-dropdown {
+  background-color: #ffffff !important;
+  border: 1px solid #f2f2f2 !important;
+  border-radius: 7px 0 0 7px !important;
+}
+.input-select {
+  width: 100% !important;
+}
+label.checkbox-container {
+  color: var(--second-color);
+  display: flex;
+  gap: 5px;
+}
+
+label.checkbox-container a {
+  text-decoration: underline;
+}
+
+.connect-step {
+  width: 850px !important;
+  padding: 75px 50px;
+  border-radius: 25px;
+  box-shadow: none !important;
+  background: none !important;
+  display: none;
+}
+.connect-step h2 {
+  margin-bottom: 50px !important;
+}
+.connect-step.active {
+  display: block;
+}
+
+@media only screen and (max-width: 1280px) {
+  .blog-right-side .related-news .news-container {
+      flex-direction: row;
+      gap: 56px;
+  }
+  .news-container {
+      display: flex;
+      gap: 56px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .blog-right-side .related-news .news-container {
+      gap: 32px;
+  }
+  .news-container {
+      gap: 32px;
+  }
+ 
+}
+@media screen and (max-width: 992px) {
+  .connect-step {
+      width: 100% !important;
+  }
+  .form-group-3 {
+    grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 768px) {
+  .connect-step {
+      width: 100%;
+      padding: 75px 25px;
+  }
+  .project-requirements-page .hero {
+      padding: 0;
+  }
+  .form-group-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+.blog-right-side .related-news .news-container {
+  flex-direction: column;
+  gap: 32px;
+}
+
+.news-container {
+  flex-direction: column;
+  gap: 32px;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .sm-none {
+      display: none;
+  }
+  .request-form {
+    padding: 30px 10px;
+}
+}
+
+

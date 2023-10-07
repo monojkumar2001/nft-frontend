@@ -1,0 +1,196 @@
+#home1 .hero {
+    padding-top:50px;
+    padding-bottom: 280px;
+
+  }
+  #home1{
+    position: relative;
+    background-image: url(../../../public/assets/new/hero/home-hero-img.svg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  #home1 .hero_wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    position: relative;
+  }
+  #home1 .hero_content_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  #home1 .hero_content {
+    position: relative;
+  }
+
+  #home1 .title-top-img {
+    position: absolute;
+    left: -12px;
+    top: -30px;
+    display: none;
+  }
+
+  #home1  .section_title{
+    font-size: 65px;
+    font-weight: 900;
+    color: var(--second-color);
+    line-height: 130%;
+    margin-bottom: 15px;
+  }
+
+  #home1 .input_box{
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  
+#home1 .input_area{
+    position: relative;
+    width: 100%;
+  }
+  
+  #home1 .input_box input {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgba(187, 185, 185, 0.311);
+    padding: 10px 10px 10px 60px;
+    background: #fff;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  .subscriber_name {
+    max-width: 391px;
+  }
+  .form_control {
+    border: none;
+    font-size: 16px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  #home1 .btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  #home1 .btn button {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+  }
+  #home1 .icon span{
+    font-size: 24px;
+    color: var(--second-color);
+  }
+  .hero_img img {
+    width: 100%;
+  }
+  #home1 .service{
+    margin-top: 30px;
+  }
+  #home1 .service ul li{
+    display: flex;
+    align-items: center;
+  }
+  #home1 .service ul li span{
+    width: 20px;
+    height: 20px;
+    background: var(--main-color);
+    border-radius: 50%;
+    color: var(--white-color) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  /* @media screen and (max-width: 1440px) {
+    #home1{
+      position: relative;
+      background-image: url(../../../public/assets/new/hero/home-hero-img.svg);
+      background-position: 0 0,0 0;
+      background-repeat: no-repeat,repeat;
+      background-size: cover;
+      overflow: hidden;
+    }
+  } */
+  @media screen and (max-width: 992px) {
+    #home1 .hero_wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    #home1 .hero_content_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero_img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  #home1  .section_title{
+    font-size: 50px;
+  }
+  }
+
+
+@media screen and (max-width: 768px) {
+  #home1  .section_title{
+    font-size: 40px;
+    line-height: 50px;
+  }
+    #home1 .input-box input {
+        width: 100%;
+        height: 60px;
+        padding: 10px 10px 10px 45px;
+        font-size: 15px;
+    }
+  }
+  
+  #home1 .input-box input::placeholder {
+    color: var(--second-color);
+  }
+  
+  #home1 .icon {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+  }
+
+@media screen and (max-width: 576px){
+#home1 .btn button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+#home1  .section_title{
+  font-size: 30px;
+}
+#home1 .input_box input {
+  width: 100%;
+  height: 60px;
+  padding: 10px 10px 10px 45px;
+  font-size: 15px;
+}
+#home1 .icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+}

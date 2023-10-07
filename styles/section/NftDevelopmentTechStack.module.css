@@ -1,0 +1,150 @@
+
+.development_track{
+  position: relative;
+}
+
+  .red_filter{
+    width: 345.517px;
+    height: 345.517px;
+    border-radius: 345.517px;
+    background: #EA5454;
+    filter: blur(232px);
+    position: absolute;
+    right: -300px;
+    top: 0px;
+    z-index: -1;
+  }
+
+.options {
+    display: grid;
+    max-width: 1204px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    margin: 44px auto 75px auto;
+    position: relative;
+  }
+  .options .active {
+    background: var(--main-color);
+    border-radius: 5px;
+  }
+ .options div {
+    padding: 10px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .options p {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    color: #0B232E;
+  }
+  
+ .options div:hover {
+  background: var(--main-color);
+    border-radius: 5px;
+  }
+  
+ .options div:hover>img {
+    opacity: 1;
+  }
+  
+.options div:hover>p {
+    color: #ffffff;
+  }
+ .options .active {
+  background: var(--main-color);
+    border-radius: 5px;
+  }
+  
+.options .active img {
+    opacity: 1;
+  }
+  
+.options .active p {
+    color: #ffffff;
+  }
+
+
+.coins {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* max-width: 1058px; */
+    gap: 43px;
+    margin: auto;
+    padding: 0 40px;
+  }
+  
+.coins .nft_coin {
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 14px 49px rgba(108, 84, 234, 0.06);
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+.coins .nft_coin:hover {
+    transform: translateY(-10px);
+    background: var(--main-color);
+    color: #ffffff;
+  }
+  
+.coins .nft_coin:hover p {
+    color: #ffffff;
+  }
+  
+ .coins.active {
+    display: grid;
+  }
+  
+.coins div {
+    display: grid;
+    gap: 14px;
+    border-radius: 12px;
+    justify-items: center;
+    padding: 52px;
+  }
+  
+ .coins p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 1280px) {
+ .coins {
+        grid-template-columns: 1fr 1fr;
+    }
+   .options {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin: 44px auto 50px auto;
+  }
+  .options p {
+ white-space: nowrap;
+ font-size: 16px;
+  }
+  }
+  @media only screen and (max-width: 768px) {
+ .coins {
+        gap: 32px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+.coins {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+  }

@@ -1,0 +1,329 @@
+/* <!-- =============== Portfolio Hero start ======================= --> */
+
+
+/* <!-- ============== Our Recent Project start============== --> */
+
+.our-recent-title h3 {
+  font-size: 40px;
+  font-family: "Urbanist";
+  font-weight: 800;
+  color: #323232;
+  line-height: 50px;
+  /* margin-left: 50px; */
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+.our-recent-project-items {
+  position: relative;
+}
+
+.our-recent-arrow-left {
+  position: absolute;
+  left: -7%;
+}
+
+.our-recent-arrow {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dad3ff;
+  padding: 10px;
+  top: 50%;
+}
+
+.our-recent-arrow-right {
+  position: absolute;
+  right: -8%;
+}
+
+.our-recent-project-item {
+  width: 100%;
+}
+
+.our-recent-project-img img {
+  width: 100%;
+}
+
+.our-recent-project-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.our-recent-project-content-item h3 {
+  color: #14161b;
+  font-family: "Urbanist";
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.our-recent-project-content-item a {
+  color: #11142d;
+}
+
+.our-recent-project-content-item-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6c54ea;
+  cursor: pointer;
+}
+
+/* <!-- ============== Our Recent Project end============== --> */
+
+/* <!-- ============== Our Imagine start ======================  --> */
+
+.imagine-title h3 {
+  font-size: 40px;
+  font-family: "Urbanist";
+  font-weight: 800;
+  color: #323232;
+  text-align: center;
+  line-height: 50px;
+}
+
+.imagine-items {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 4%;
+  gap: 4%;
+  align-items: center;
+}
+
+.imagine-item h4 {
+  font-family: "Urbanist";
+  font-weight: 700;
+  font-size: 22px;
+  color: #434343;
+  margin-bottom: 20px;
+}
+
+.imagine-item-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.imaging-img {
+  width: 100%;
+}
+
+.imaging-img img {
+  width: 100%;
+}
+
+.imagine-arrow-left {
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+  z-index: 1;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.imagine-arrow-right {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .our-recent-arrow-left {
+    left: 0;
+    z-index: 99;
+  }
+  .our-recent-arrow-right {
+    right: 0;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .imagine-items {
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+  }
+  .our-recent-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .imagine-items {
+    grid-template-columns: 100%;
+    gap: 50px;
+  }
+  .imagine-title h3 {
+    font-size: 30px;
+  }
+  .imagine-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+/* <!-- ============== Our Imagine end ======================  --> */
+
+/* <!-- ===================== Creative Ideas start ============== --> */
+
+.creative-idea {
+  background: #6c54ea;
+  padding: 50px 0 80px 0;
+}
+
+.creative-idea-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.video-controls{
+  width: 100%;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+}
+.creative-idea-content-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.creative-idea-content-left h3 {
+  font-size: 40px;
+  font-family: "Urbanist";
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+.creative-idea-content-left p {
+  color: #ffffff;
+}
+
+.creative-idea-content-left .create-idea-btn {
+  width: 250px;
+  padding: 16px 16px;
+  background: #ffffff;
+  box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+  border-radius: 37px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #6c54ea;
+  transition: 0.3s;
+  border: 2px solid var(--main-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.creative-idea-content-right img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.creative-idea-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.creative-idea-item img {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .creative-idea-content-left {
+    text-align: center;
+  }
+  .creative-idea-content-left .create-idea-btn {
+    text-align: center;
+    margin: auto;
+  }
+  .creative-idea-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .creative-idea-items {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .creative-idea-content-left h3 {
+    font-size: 30px;
+  }
+  .creative-idea-content-left {
+    text-align: center;
+  }
+  .creative-idea-content-left .create-idea-btn {
+    text-align: center;
+    margin: auto;
+  }
+  .creative-idea-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .creative-idea-items {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .our-recent-project {
+    padding-top: 100px;
+  }
+}
+
+/* <!-- ===================== Creative Ideas end ============== --> */
+
+.slider-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000033;
+  z-index: 999;
+  display: none;
+  backdrop-filter: blur(14px);
+  transition: 0.3s;
+}
+
+.slider-popup-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slider-popup-img img {
+  max-width: 100%;
+}
+
+.slider-popup.active {
+  display: block;
+}

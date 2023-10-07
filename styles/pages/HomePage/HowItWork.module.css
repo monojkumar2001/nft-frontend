@@ -1,0 +1,144 @@
+
+.how_we_work_section{
+    padding-bottom: 80px;
+}
+.how_we_work_section h2{
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+}
+.how_we_work_row{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 90%;
+    margin: auto;
+}
+.how_we_work_topic hr{
+    width: 120%;
+    position: relative;
+    top: 30px;
+    left: -50px;
+    z-index: -1;
+    border: 3px solid #6C54EA;
+}
+.how_we_work_topic{
+   position: relative;
+}
+.how_we_work_topic:nth-child(3)::before{
+    content: '';
+    background-image: url(../../../public/assets/images/howItwork-arrow-1.svg);
+    width: 80px;
+    height: 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -26%;
+    top: 30px;
+}
+.how_we_work_topic:nth-child(4)::before{
+    content: '';
+    background-image: url(../../../public/assets/images/howItwork-arrow-2.svg);
+    width: 80px;
+    height: 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -28%;
+    top: -78px;
+}
+.how_we_work_icon{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #6C54EA;
+    margin-bottom: 20px;
+    position: relative;
+}
+.how_we_work_icon img{
+    width: 100%;
+}
+.how_we_work_topic h3{
+    color: #2B2B2B;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1400px) {
+    .how_we_work_topic:nth-child(3)::before{
+       display: none;
+    }
+    .how_we_work_topic:nth-child(4)::before{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .how_we_work_row{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .how_we_work_section{
+        width: 100%;
+    }
+    .how_we_work_section h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .how_we_work_row{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 100%;
+    }
+    .how_we_work_topic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .how_we_work_topic h3{
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 110%;
+    }
+    .how_we_work_topic p{
+        text-align: center;
+    }
+
+    .how_we_work_topic hr{
+        display: none;
+    }
+    .how_we_work_section{
+        padding-bottom: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

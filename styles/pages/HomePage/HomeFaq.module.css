@@ -1,0 +1,47 @@
+.faq_wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 30% 65%;
+  }
+  .left_faq h2 {
+    font-size: 40px;
+    line-height: 136%;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+.faq_Link_Item a{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #751EE4;
+}
+.faq_image {
+    margin-top: 65px;
+  }
+
+
+
+  
+  @media screen and (max-width: 992px) {
+    .left_faq {
+        text-align: center;
+    } 
+    .left_faq h2{
+        font-size: 30px;
+    }
+    .faq_Link_Item a{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .faq_image {
+        margin-top: 45px;
+      }
+    .faq_image img{
+        width: 100%;
+      }
+    .faq_wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
+  }

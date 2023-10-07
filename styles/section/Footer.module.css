@@ -1,0 +1,177 @@
+.footer_area {
+  background: linear-gradient(
+        0deg,
+        rgba(74, 42, 236, 0.12) 0%,
+        rgba(108, 84, 234, 0) 100%
+      );
+      padding-bottom: 80px;
+  }
+
+.footer_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 45px 0;
+    color: #1e1e1e;
+    grid-gap: 30px;
+  }
+  
+  .footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+.footer_item_title {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .footer_item_List{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer_item_List a{
+    color: #1e1e1e;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.4s;
+  }
+  .footer_item_List a:hover{
+    background: linear-gradient(90deg, #6C54EA 34.79%, #751EE4 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* // ==================last footer=================== */
+  .last_footer {
+    border-top: 1px solid var(--main-color);
+    padding: 35px 0;
+  }
+  .rowf {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .last_footer_content p{
+    font-weight: 500;
+  }
+  .right_footer_social {
+    display: flex;
+    justify-content: end;
+    color: #292929;
+  }
+  .footer_links {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .footer_links div {
+    width: 40px;
+    height: 40px;
+    background: #2d2d2d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  /* // ======================end footer ================== */
+  /* .end_footer {
+    background: #6c54ea;
+    padding: 10px;
+  } */
+
+  .end_footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .end_footer_content h3 {
+    font-size: 20px;
+    color: #000000;
+  }
+  .find_expert_btn {
+    background: var(--main-color);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 35px 0 35px 35px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  .find_expert_btn:hover{
+    color: var(--white-color);
+  }
+  .find_expert_btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 78%;
+    height: 93%;
+    background: var(--main-color);
+    animation: social-pulse 1500ms ease-out infinite;
+    border-radius: 35px 0 35px 35px;
+    -webkit-animation: social-pulse 1500ms ease-out infinite;
+    z-index: -1;
+  }
+  @keyframes social-pulse {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        -o-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    }
+  }
+  @media screen and (max-width: 992px) {
+   .footer_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 0;
+        grid-gap: 30px;
+    }
+    .rowf {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .footer_links {
+
+        margin-top: 0px;
+      }
+      .Footer_footer_area__cISHB {
+        padding-bottom: 50px;
+    }
+    .right_footer_social {
+        justify-content: center;
+    }
+    .last_footer {
+        padding: 15px 0;
+      }
+  }
+
+
+  @media screen and (max-width: 576px) {
+.footer_wrapper {
+        gap: 10px;
+    }
+    .last_footer_content {
+        text-align: center;
+    }
+   
+    .end_footer_content h3 {
+        display: none;
+    }
+  }

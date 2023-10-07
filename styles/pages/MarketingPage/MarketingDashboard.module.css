@@ -1,0 +1,37 @@
+/* <!-- =============== marketing dashbord =========== --> */
+.marketing_dashboard{
+    margin-top: -214px;
+    position: relative;
+    z-index: -1;
+  }
+  .dashbord_img{
+    width: 100%;
+  }
+  .dashbord_img img{
+    width: 100%;
+    z-index: 1;
+  }
+  @media screen and (max-width: 1150px){
+    .marketing_dashboard {
+        margin-top: -130px;
+        position: relative;
+    }
+  }
+  @media screen and (max-width: 992px){
+    .marketing_dashboard {
+        margin-top: -113px;
+        position: relative;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .marketing_dashboard {
+        margin-top: -83px;
+        position: relative;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .marketing_dashboard {
+        margin-top: -50px;
+        position: relative;
+    }
+  }

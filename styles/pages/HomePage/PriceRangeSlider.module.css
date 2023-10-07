@@ -1,0 +1,126 @@
+.price-range-slider {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.price_range{
+  margin-bottom: 100px;
+}
+.range_area {
+  display: grid;
+  grid-template-columns: 65% 27%;
+  gap: 8%;
+  padding: 60px;
+  box-shadow: #952ef6 15px 15px 0px 1px, #5d6aef 0px 0px 0px 2px;
+  background: #fff;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+.left_range {
+  text-align: center;
+  position: relative;
+}
+h3.range_title {
+  font-size: 34px;
+  line-height: 50px;
+  font-weight: 900;
+}
+
+h2.range_total {
+  font-size: 30px;
+  margin: 28px 0;
+  font-weight: 900;
+}
+.get_start_btn {
+  padding: 10px 31px;
+  background: var(--main-color);
+  color: var(--white-color);
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 2px solid var(--main-color);
+}
+.right_telk {
+  text-align: center;
+}
+
+h2.month_price {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+h2.month_price span {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.right_telk p {
+  margin-top: 10px;
+}
+
+.left_range::after {
+  content: "";
+  position: absolute;
+  right: -49px;
+  top: 0;
+  bottom: 0;
+  background: #ddd;
+  width: 2px;
+}
+
+.price_range_width {
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .range_area {
+    grid-template-columns: 100%;
+    gap: 8%;
+  }
+  h2.range_total {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  .left_range::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .range_area {
+    grid-template-columns: 100%;
+    gap: 8%;
+    padding: 20px 20px 50px 20px;
+  }
+  .price_range-width {
+    width: 100%;
+  }
+  .price_range{
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .range_area {
+    grid-template-columns: 100%;
+    gap: 8%;
+    padding: 20px 20px 50px 20px;
+  }
+  .price_range_width {
+    width: 100%;
+  }
+  h3.range_title {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  h2.range_total {
+    font-size: 25px;
+  }
+  h2.month_price {
+    font-size: 25px;
+  }
+}

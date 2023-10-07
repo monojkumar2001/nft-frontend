@@ -1,0 +1,164 @@
+.contact_area{
+  position: relative;
+}
+.yellow_filter{
+  width: 345.517px;
+  height: 345.517px;
+  border-radius: 345.517px;
+  background: #FFD18C;
+  filter: blur(232px);
+  position: absolute;
+  left: -200px;
+  top: 100px;
+  z-index: -1;
+}
+.blue_filter{
+  width: 345.517px;
+  height: 345.517px;
+  border-radius: 345.517px;
+  background: #8CFFF1;
+  filter: blur(232px);
+  position: absolute;
+  right: -200px;
+ bottom: 200px;
+  z-index: -1;
+}
+.section_title {
+    text-align: center;
+    width: 55%;
+    margin: auto;
+  }
+  .sec_title {
+    font-size: 40px;
+    color: var(--second-color);
+    position: relative;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 30px;
+  }
+  
+  .sec_title:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 40%;
+    background: var(--main-color);
+    bottom: 0;
+  }
+  
+  .sec_title h2 {
+    font-size: clamp(25px, 2vw, 44px);
+    line-height: 50px;
+  }
+  .request_form {
+    background: #fff;
+    padding: 35px;
+    box-shadow: -1px 19px 49px rgba(102, 87, 179, 0.11);
+    border-radius: 10px;
+  }
+  .form_group_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .input_label {
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 15px 0;
+    display: block;
+  }
+  .input_box {
+    background: var(--white-color);
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    box-shadow: 0px 14px 49px rgba(108, 84, 234, 0.06);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .input_select {
+    width: 100%;
+  }
+.form_control {
+    width: 100% ;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 14px 49px rgb(108 84 234 / 6%);
+    border-radius: 7px ;
+    padding: 20px 20px;
+    color:#061237;
+  }
+
+  /* ===================custom button============ */
+
+.custom_btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.custom_btn:hover {
+    color: var(--white-color);
+    background: var(--second-color);
+}
+
+.custom_btn:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%) scale(0);
+    width: 1px;
+    height: 1px;
+    background: var(--white-color);
+    opacity: 0;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.custom_btn:hover:before {
+    transform: translate(-50%) scale(310);
+    opacity: 1;
+}
+
+
+  
+  @media screen and (max-width: 992px) {
+    .section_title {
+        width: 95%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .form_group_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .section_title {
+        width: 100%;
+    }
+    .sec_title {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .request_form {
+        padding: 30px 10px;
+    }
+}

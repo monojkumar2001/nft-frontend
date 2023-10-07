@@ -1,0 +1,87 @@
+#hiCoin{
+    position: relative;
+    padding-top: 80px;
+    background-image: url(../../../public/assets/images/nft-development/hero-bg-img.svg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+
+#hiCoin .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  #hiCoin .hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    z-index: 3;
+  }
+  .section_title{
+    font-size: 70px;
+    font-weight: 900;
+    color: var(--second-color);
+    line-height: 130%;
+    margin-bottom: 15px;
+  }
+  .section_title span{
+    background: linear-gradient(90deg, #6C54EA 0%, #751EE4 91.18%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
+  #hiCoin .btn_hero_1 {
+    padding: 16px 46px;
+    background: var(--main-color);
+    box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+    border-radius: 37px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    transition: 0.3s;
+    border: 2px solid var(--main-color);
+  }
+  #hiCoin .btn_hero_1 a {
+    color: #ffffff;
+  }
+
+  .hero_img img{
+width: 100%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #hiCoin .hero-content {
+        gap: 16px;
+    }
+    
+  }
+
+  @media screen and (max-width: 992px) {
+#hiCoin .hero_content {
+      text-align: center;
+  }
+  #hiCoin .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+  .section_title{
+    font-size: 50px;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+    #hiCoin .hero_content {
+        padding: 10px;
+    }
+    .section_title{
+        font-size: 40px;
+        line-height: 50px;
+      }
+  }
